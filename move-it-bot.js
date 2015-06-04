@@ -233,17 +233,17 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: null,
+        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: null,
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: null,
-            language: null,
-            chatLink: null,
+            botName: "basicBot",
+            language: "english",
+            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -1065,22 +1065,6 @@
                     }
                 }
                  **/
-                 if (msg.indexOf('http://plug.dj/') > -1 || msg.indexOf('https://plug.dj/') > -1 || msg.indexOf('minha sala') > -1 || msg.indexOf('plug.dj') > -1 || msg.indexOf('plug.dj/') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
-                    return true;
-                }
-                if(msg.indexOf('oi bot') !== -1 || msg.indexOf('bot oi') !== -1 || msg.indexOf('ola bot') !== -1 || msg.indexOf('olÃƒÂ¡ bot') !== -1 || msg.indexOf('bot blz') !== -1 || msg.indexOf('ei bot') !== -1 || msg.indexOf('e ai bot') !== -1 || msg.indexOf('eai bot') !== -1 || msg.indexOf('hello bot') !== -1 || msg.indexOf('hi bot') !== -1 || msg.indexOf('yo bot') !== -1 || msg.indexOf('waddup bot') !== -1 || msg.indexOf('bot waddup') !== -1){
-                    API.sendChat('/me OlÃ¡ :)');
-                }
-                if(msg.indexOf('oi bot tudo bem') !== -1 || msg.indexOf('oi bot tudo bem?') !== -1 || msg.indexOf('tudo bem bot?') !== -1 || msg.indexOf('td bem bot?') !== -1 || msg.indexOf('tudo bem bot') !== -1 || msg.indexOf('como vai bot?') !== -1){
-                    API.sendChat('/me Tudo bem e vc dlÃ§?');
-                }
-                if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
-                    API.moderateDeleteChat(chat.cid);
-                    return true;
-                }    
-
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
@@ -1183,7 +1167,10 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             spam: [
-                'mudafoka', 'foda'
+                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
+                'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
+                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
+                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
                 'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
@@ -1789,7 +1776,7 @@
             },
 
             cookieCommand: {
-                command: ['cookie', 'biscoito'],
+                command: 'cookie',
                 rank: 'user',
                 type: 'startsWith',
                 getCookie: function (chat) {
@@ -2261,7 +2248,7 @@
 
             killCommand: {
                 command: 'kill',
-                rank: 'manager',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2826,7 +2813,7 @@
             },
 
             rulesCommand: {
-                command: ['rules', 'regras'],
+                command: 'rules',
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2857,7 +2844,7 @@
             },
 
             skipCommand: {
-                command: ['skip', 'pula'],
+                command: 'skip',
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
