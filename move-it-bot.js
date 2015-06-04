@@ -1065,6 +1065,11 @@
                     }
                 }
                  **/
+                if (msg.indexOf('http://plug.dj/') > -1 || msg.indexOf('https://plug.dj/') > -1 || msg.indexOf('plug.dj/') > -1) {
+                    API.moderateDeleteChat(chat.cid);
+                    API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
+                    return true;
+                } 
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
@@ -1167,10 +1172,7 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             spam: [
-                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
-                'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
-                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
-                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
+                '555555', '777777'
             ],
             curses: [
                 'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
