@@ -55,15 +55,15 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
+        botName: "Move-It Bot",
+        language: "portuguese",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         cmdDeletion: true,
         chatLink: "https://rawgit.com/Shadow-Slayer/moveit/master/lang/pt.json",
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         blacklistEnabled: true,
@@ -72,14 +72,14 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
+        voteSkip: true,
         voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 7,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        lockskipPosition: 3,
+        lockskipPosition: 1,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list. "],
@@ -87,7 +87,13 @@
             ["mix", "You played a mix, which is against the rules. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
             ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["unavailable", "The song you played was not available for some users. "],
+            ["som", "A música tocada tinha qualidade de som ruim ou não tinha som. "],
+            ["tema", "Sua música não estava de acordo com o tema da sala. "],
+            ["op", "Essa música está na lista OP. "],
+            ["tocada", "Sua música já foi tocada recentememnte. "],
+            ["nudes", "A música continha conteudo impróprio NSFW"],
+            ["ind", "A música não estava disponivel para alguns usuários"]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
@@ -98,18 +104,18 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: null,
-        themeLink: null,
-        fbLink: null,
+        rulesLink: "http://goo.gl/Nw0Jth",
+        themeLink: "http://goo.gl/Nw0Jth",
+        fbLink: "http://goo.gl/gGsuJQ",
         youtubeLink: null,
-        website: null,
-        intervalMessages: [],
-        messageInterval: 5,
+        website: "http://goo.gl/O4tlVo",
+        intervalMessages: [":game_die: Hora de fazer a roleta! @staff :game_die:",":game_die: Faltam 2 mÃºsicas para a roleta",":game_die: Na roleta vocÃª pode tanto ganhar posiÃ§Ãµes, como tambÃ©m perder!!!"],
+        messageInterval: 2,
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleOPlist.json"
         }
     }));
 
