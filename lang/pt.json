@@ -138,7 +138,7 @@
     "inactivefor": "\/me [@%%NAME%%] @%%USERNAME%% esteve inativo por %%TIME%%.",
     "inactivelonger": "\/me [@%%NAME%%] @%%USERNAME%% esteve inativo por mais tempo que %%BOTNAME%% esteve online.",
     "autowoot": "\/me N\u00f3s recomendamos Origem woot para autowoot: http://origem-woot.com/Instalation/",
-    "brandambassador": "\/me Um Embaixador de Marca \u00e9 a voz dos usu\u00e1rios da plug.dj. Eles promovem eventos, ajudam as comunidades e divulgam a plug.dj para todo o mundo. Mais info: https:\/\/plug.dj\/ba",
+    "brandambassador": "\/me Um Embaixador de Marca \u00e9 a voz dos usu\u00e1rios da plug.dj. Eles promovem eventos, ajudam as comunidades e divulgam a plug.dj para todo o mundo.",
     "bouncerplusrank": "\/me [@%%NAME%%] Voc\u00ea precisa ser Coordenador ou superior para ativar o Bouncer+.",
     "chatcleared": "\/me [@%%NAME%%] O chat foi limpo.",
     "deletechat": "\/me [@%%NAME%%] O chat de %%USERNAME%% foi limpo.",
