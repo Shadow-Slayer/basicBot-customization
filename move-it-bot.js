@@ -1383,6 +1383,20 @@
                 },
              **/
 
+            lovecommand: {
+                        command: 'love',
+                        rank: 'user',
+                        type: 'startsWith',
+                        functionality: function(chat, cmd){
+                                if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                                if( !basicBot.commands.executable(this.rank, chat) ) return void (0);
+                                else{
+					var user = basicBot.userUtilities.lookupUserName(name);
+                        		return API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, love: this.getlove()}));
+                                
+                                }
+                        }
+            },
             activeCommand: {
                 command: 'active',
                 rank: 'bouncer',
@@ -2827,22 +2841,6 @@
                     else {
                         if (typeof basicBot.settings.rulesLink === "string")
                             return API.sendChat(subChat(basicBot.chat.roomrules, {link: basicBot.settings.rulesLink}));
-                    }
-                }
-            },
-
-            loveCommand: {
-                command: 'love',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-	        var name = msg.substring(space + 2);
-                        var user = basicBot.userUtilities.lookupUserName(name);
-                        if (typeof basicBot.settings.rulesLink === "string")
-                            return API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, love: this.getlove()}));
                     }
                 }
             },
