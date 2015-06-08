@@ -2832,22 +2832,17 @@
             },
 
             loveCommand: {
-                command: ['love', 'amor'],
+                command: 'love',
                 rank: 'user',
-                type: 'startsWith',
-                getLove: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.love.length);
-                    return basicBot.chat.love[c];
-                },
+                type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);                    
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-		API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, love: this.getlove()}));
-                            }
-                        }
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+	        var name = msg.substring(space + 2);
+                        var user = basicBot.userUtilities.lookupUserName(name);
+                        if (typeof basicBot.settings.rulesLink === "string")
+                            return API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, love: this.getlove()}));
                     }
                 }
             },
