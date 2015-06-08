@@ -1069,7 +1069,11 @@
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
                     return true;
-                } 
+                }
+                if (msg.indexOf('!love') > -1) {
+                    API.moderateDeleteChat(chat.cid);
+                    API.sendChat('<3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
+		}
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
