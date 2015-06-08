@@ -1070,7 +1070,7 @@
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
                     return true;
                 }
-                if (msg.indexOf('!love') > -1) {
+                if (msg.indexOf('!lovebot') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat('<3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
 		}
@@ -1817,6 +1817,26 @@
                 }
             },
 
+            loveCommand: {
+                command: ['love', 'amor'],
+                rank: 'user',
+                type: 'startsWith',
+                getCookie: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.cookies.length);
+                    return basicBot.chat.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);                    
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+		API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            },
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
