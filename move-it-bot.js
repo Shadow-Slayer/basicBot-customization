@@ -1844,7 +1844,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getLove()}));
                             }
                         }
                     }
