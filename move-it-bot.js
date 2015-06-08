@@ -1821,9 +1821,9 @@
                 command: ['love', 'amor'],
                 rank: 'user',
                 type: 'startsWith',
-                getCookie: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.cookies.length);
-                    return basicBot.chat.cookies[c];
+                getLove: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.love.length);
+                    return basicBot.chat.love[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1831,7 +1831,7 @@
                         else {
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
-		API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+		API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, love: this.getlove()}));
                             }
                         }
                     }
