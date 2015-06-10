@@ -1627,6 +1627,7 @@
                         var user = basicBot.userUtilities.lookupUserName(name);
                         if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
                         API.moderateBanUser(user.id, 1, API.BAN.DAY);
+                        API.sendChat('/me @staff favor informar o motivo do ban http://goo.gl/forms/uJlToFL9xU');
                     }
                 }
             },
