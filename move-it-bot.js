@@ -1077,7 +1077,6 @@
                     API.sendChat('<3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
 		}
 		if (msg.indexOf('oi bot') > -1) {
-                    API.moderateDeleteChat(chat.cid);
                     setTimeout(function (user) {
                     	API.sendChat('oi lindo(a) <3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
                     	}, 2 * 1000, user)
