@@ -1074,6 +1074,12 @@
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat('<3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
 		}
+		if (msg.indexOf('!teste') > -1) {
+                    API.moderateDeleteChat(chat.cid);
+                    setTimeout(function (user) {
+                    	API.sendChat('<3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
+                    	}, 8 * 1000, user)
+		}
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
