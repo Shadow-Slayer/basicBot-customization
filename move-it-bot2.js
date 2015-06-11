@@ -718,7 +718,9 @@
                         var messageNumber = basicBot.room.roomstats.songCount % basicBot.settings.intervalMessages.length;
                         msg = basicBot.settings.intervalMessages[messageNumber];
                     }
-                    API.sendChat('/me ' + msg);
+                    setTimeout(function (user) {
+                    	API.sendChat('/me ' + msg);
+                    }, 10 * 1000, user)
                 }
             },
             updateBlacklists: function () {
@@ -1073,6 +1075,12 @@
                 if (msg.indexOf('!lovebot') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat('<3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
+		}
+                if (msg.indexOf('oi bot') > -1) {
+                    API.moderateDeleteChat(chat.cid);
+                    setTimeout(function (user) {
+                    	API.sendChat('oi lindo(a) <3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
+                    	}, 2 * 1000, user)
 		}
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
