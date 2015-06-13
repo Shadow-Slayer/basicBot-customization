@@ -19,11 +19,11 @@ API.on(API.USER_JOIN, function(user) {
          
      /*if (user.id == "5518602") {
          API.sendChat("/me lunna @" + user.username + " oo ");
-         }
-         
-     if (user.id == "id") {
-         API.sendChat("/me eduarda @" + user.username + " oo ");
          }*/
+         
+     if (user.id == "5401598") {
+         API.sendChat("/me A Rainha dos Pirralhos @" + user.username + " entrou na sala :babby: ");
+         }
      
      if (user.id == "id") {
          API.sendChat("/me expelliarmus @" + user.username + " te desarmei :P ");
