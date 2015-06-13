@@ -3,16 +3,28 @@ API.on(API.USER_JOIN, function(user) {
          API.sendChat("/me gostosão @" + user.username + " chegooooou <3 ");
          }
       if (user.id == "4311237") {
-         API.sendChat("/me :nathy: dlç entrou na sala @" + user.username + " <3 ");
+         API.sendChat("/me :nathy: dlç da sala @" + user.username + " entrou <3 ");
          }    
       if (user.id == "5102943") {
          API.sendChat("/me Negão @" + user.username + " entrou :babby: <3 ");
          } 
 		 
-      if (user.id == "id") {
-         API.sendChat("/me oo @" + user.username + " oo ");
+      if (user.id == "5039941") {
+         API.sendChat("/me O incrivel Rei @" + user.username + " entrou na sala :P ");
          }
     
+     if (user.id == "3546433") {
+         API.sendChat("/me O Bruxo @" + user.username + " entou na sala ");
+         }
+         
+     /*if (user.id == "5518602") {
+         API.sendChat("/me lunna @" + user.username + " oo ");
+         }
+         
+     if (user.id == "id") {
+         API.sendChat("/me eduarda @" + user.username + " oo ");
+         }*/
+     
      if (user.id == "id") {
          API.sendChat("/me expelliarmus @" + user.username + " te desarmei :P ");
          }
