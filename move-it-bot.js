@@ -3442,7 +3442,7 @@
                                 }
                                 var slug = API.getUser(id).slug;
                                 if (typeof slug !== 'undefined') {
-                                    var profile = ", Profile: http://plug.dj/@/" + slug;
+                                    var profile = ", Profile: @/" + slug;
                                 } else {
                                     var profile = "";
                                 }
