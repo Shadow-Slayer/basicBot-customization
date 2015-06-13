@@ -1600,24 +1600,6 @@
                     }
                 }
             },
-            loveCommand: {
-                command: ['love', 'ask'],
-                rank: 'user',
-                type: 'startsWith',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                            var crowd = API.getUsers();
-                            var msg = chat.message;
-                            var argument = msg.substring(cmd.length + 1);
-                            var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomBall = Math.floor(Math.random() * basicBot.chat.love.length);
-                            var randomSentence = Math.floor(Math.random() * 1);
-                            API.sendChat(subChat(basicBot.chat.love, {name: chat.un, response: basicBot.chat.love[randomBall]}));
-                     }
-                }
-            },
             ballCommand: {
                 command: ['8ball', 'ask'],
                 rank: 'user',
@@ -3471,6 +3453,43 @@
                 }
             },
 
+            loveCommand: {
+                command: 'love',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['deu-lhe <3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:!'
+                    ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+ 
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.eatlove);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouserlove, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selflove, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            },
             youtubeCommand: {
                 command: 'youtube',
                 rank: 'user',
