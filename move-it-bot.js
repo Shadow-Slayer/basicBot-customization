@@ -53,7 +53,7 @@
         } else loadSocket();
     }
 
-    var sendToSocket = function () {
+    /*var sendToSocket = function () {
         var basicBotSettings = basicBot.settings;
         var basicBotRoom = basicBot.room;
         var basicBotInfo = {
@@ -74,7 +74,7 @@
         };
         localStorage.setItem("basicBotStorageInfo", JSON.stringify(basicBotStorageInfo));
 
-    };
+    };*/
 
     var subChat = function (chat, obj) {
         if (typeof chat === "undefined") {
