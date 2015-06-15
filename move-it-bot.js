@@ -125,7 +125,7 @@
         });
     };
 
-    var retrieveSettings = function () {
+    /*var retrieveSettings = function () {
         var settings = JSON.parse(localStorage.getItem("basicBotsettings"));
         if (settings !== null) {
             for (var prop in settings) {
@@ -157,7 +157,7 @@
                 basicBot.room.newBlacklisted = room.newBlacklisted;
                 API.chatLog(basicBot.chat.datarestored);
             }
-        }
+        }*/
         var json_sett = null;
         var roominfo = document.getElementById("room-settings");
         info = roominfo.textContent;
