@@ -53,7 +53,7 @@
         } else loadSocket();
     }
 
-    /*var sendToSocket = function () {
+    var sendToSocket = function () {
         var basicBotSettings = basicBot.settings;
         var basicBotRoom = basicBot.room;
         var basicBotInfo = {
@@ -74,7 +74,7 @@
         };
         localStorage.setItem("basicBotStorageInfo", JSON.stringify(basicBotStorageInfo));
 
-    };*/
+    };
 
     var subChat = function (chat, obj) {
         if (typeof chat === "undefined") {
@@ -125,7 +125,7 @@
         });
     };
 
-    /*var retrieveSettings = function () {
+    var retrieveSettings = function () {
         var settings = JSON.parse(localStorage.getItem("basicBotsettings"));
         if (settings !== null) {
             for (var prop in settings) {
@@ -135,7 +135,7 @@
     };
 
     var retrieveFromStorage = function () {
-        var info = localStorage.getItem("basicBotStorageInfo");
+        var info = localStorage.getItem("basicBotStorageInfo2");
         if (info === null) API.chatLog(basicBot.chat.nodatafound);
         else {
             var settings = JSON.parse(localStorage.getItem("basicBotsettings"));
@@ -157,7 +157,7 @@
                 basicBot.room.newBlacklisted = room.newBlacklisted;
                 API.chatLog(basicBot.chat.datarestored);
             }
-        }*/
+        }
         var json_sett = null;
         var roominfo = document.getElementById("room-settings");
         info = roominfo.textContent;
