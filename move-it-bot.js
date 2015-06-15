@@ -135,7 +135,7 @@
     };
 
     var retrieveFromStorage = function () {
-        var info = localStorage.getItem("basicBotStorageInfo2");
+        var info = localStorage.getItem("basicBotStorageInfo");
         if (info === null) API.chatLog(basicBot.chat.nodatafound);
         else {
             var settings = JSON.parse(localStorage.getItem("basicBotsettings"));
