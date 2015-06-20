@@ -99,7 +99,8 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+        /*$.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {*/
+        $.get("https://rawgit.com/Shadow-Slayer/moveit/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -238,7 +239,7 @@
     var basicBot = {
         version: "2.8.9",
         status: false,
-        name: "basicBot",
+        name: "Move-It - basicBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -248,8 +249,8 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
-            language: "english",
+            botName: "bbasicBot",
+            language: "portuguese",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
@@ -295,7 +296,7 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: "Temporary Message of the Day",
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
