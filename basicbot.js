@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Shadow-Slayer/moveit/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/Shadow-Slayer/moveit/master/lang/pt.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -248,69 +248,69 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Move-It Bot",
-        language: "portuguese",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
-        cmdDeletion: true,
-        chatLink: "https://rawgit.com/Shadow-Slayer/moveit/master/lang/pt.json",
-        maximumAfk: 120,
-        afkRemoval: false,
-        maximumDc: 60,
-        bouncerPlus: true,
-        blacklistEnabled: true,
-        lockdownEnabled: false,
-        lockGuard: false,
-        maximumLocktime: 10,
-        cycleGuard: true,
-        maximumCycletime: 10,
-        voteSkip: true,
-        voteSkipLimit: 10,
-        timeGuard: true,
-        maximumSongLength: 7,
-        autodisable: true,
-        commandCooldown: 30,
-        usercommandsEnabled: true,
-        lockskipPosition: 1,
-        lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "],
-            ["som", "A música tocada tinha qualidade de som ruim ou não tinha som. "],
-            ["tema", "Sua música não estava de acordo com o tema da sala. "],
-            ["op", "Essa música está na lista OP. "],
-            ["tocada", "Sua música já foi tocada recentememnte. "],
-            ["nudes", "A música continha conteudo impróprio NSFW"],
-            ["ind", "A música não estava disponivel para alguns usuários"]
-        ],
-        afkpositionCheck: 15,
-        afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
-        motd: "Temporary Message of the Day",
-        filterChat: false,
-        etaRestriction: false,
-        welcome: true,
-        opLink: null,
-        rulesLink: "http://goo.gl/Nw0Jth",
-        themeLink: "http://goo.gl/Nw0Jth",
-        fbLink: "http://goo.gl/gGsuJQ",
-        youtubeLink: null,
-        website: "http://goo.gl/O4tlVo",
-        intervalMessages: [":game_die: Hora de fazer a roleta! @staff :game_die:",":game_die: Faltam 2 musicas para a roleta",":game_die: Na roleta voce pode tanto ganhar posicoes, como tambem perder!!!"],
-        messageInterval: 2,
-        songstats: true,
-        commandLiteral: "!",
-        blacklists: {
-            NSFW: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleOPlist.json",
-            BANNED: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/BANNEDlist.json"
-            }
+        	botName: "Move-It Bot",
+		language: "portuguese",
+        	startupCap: 1, // 1-200
+        	startupVolume: 0, // 0-100
+        	startupEmoji: false, // true or false
+        	cmdDeletion: true,
+        	chatLink: "https://rawgit.com/Shadow-Slayer/moveit/master/lang/pt.json",
+        	maximumAfk: 120,
+        	afkRemoval: false,
+        	maximumDc: 60,
+        	bouncerPlus: true,
+        	blacklistEnabled: true,
+        	lockdownEnabled: false,
+        	lockGuard: false,
+        	maximumLocktime: 10,
+        	cycleGuard: true,
+        	maximumCycletime: 10,
+        	voteSkip: true,
+        	voteSkipLimit: 10,
+        	timeGuard: true,
+        	maximumSongLength: 7,
+        	autodisable: true,
+        	commandCooldown: 30,
+        	usercommandsEnabled: true,
+        	lockskipPosition: 1,
+        	lockskipReasons: [
+            		["theme", "This song does not fit the room theme. "],
+            		["op", "This song is on the OP list. "],
+            		["history", "This song is in the history. "],
+            		["mix", "You played a mix, which is against the rules. "],
+            		["sound", "The song you played had bad sound quality or no sound. "],
+            		["nsfw", "The song you contained was NSFW (image or sound). "],
+            		["unavailable", "The song you played was not available for some users. "],
+            		["som", "A música tocada tinha qualidade de som ruim ou não tinha som. "],
+            		["tema", "Sua música não estava de acordo com o tema da sala. "],
+            		["op", "Essa música está na lista OP. "],
+            		["tocada", "Sua música já foi tocada recentememnte. "],
+        		["nudes", "A música continha conteudo impróprio NSFW"],
+            		["ind", "A música não estava disponivel para alguns usuários"]
+        		],
+        	afkpositionCheck: 15,
+        	afkRankCheck: "ambassador",
+        	motdEnabled: false,
+        	motdInterval: 5,
+        	motd: "Temporary Message of the Day",
+        	filterChat: false,
+        	etaRestriction: false,
+        	welcome: true,
+        	opLink: null,
+        	rulesLink: "http://goo.gl/Nw0Jth",
+        	themeLink: "http://goo.gl/Nw0Jth",
+        	fbLink: "http://goo.gl/gGsuJQ",
+        	youtubeLink: null,
+        	website: "http://goo.gl/O4tlVo",
+        	intervalMessages: [":game_die: Hora de fazer a roleta! @staff :game_die:",":game_die: Faltam 2 musicas para a roleta",":game_die: Na roleta voce pode tanto ganhar posicoes, como tambem perder!!!"],
+        	messageInterval: 2,
+        	songstats: true,
+        	commandLiteral: "!",
+        	blacklists: {
+        		NSFW: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleNSFWlist.json",
+            		OP: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleOPlist.json",
+            		BANNED: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/BANNEDlist.json"
+            	}
         },
         room: {
             name: null,
