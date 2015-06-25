@@ -1179,6 +1179,11 @@
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
                     return true;
                 }
+                if (msg.indexOf('http://plug.dj/') > -1 || msg.indexOf('https://plug.dj/') > -1 || msg.indexOf('plug.dj/') > -1) {
++                    API.moderateDeleteChat(chat.cid);
++                    API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
++                    return true;
++               } 
                 if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
                     API.moderateDeleteChat(chat.cid);
                     return true;
@@ -1745,6 +1750,7 @@
                         var user = basicBot.userUtilities.lookupUserName(name);
                         if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
                         API.moderateBanUser(user.id, 1, API.BAN.DAY);
+                        API.sendChat('/me @staff favor informar o motivo do ban http://goo.gl/forms/uJlToFL9xU');
                     }
                 }
             },
@@ -1856,7 +1862,7 @@
             },
 
             clearchatCommand: {
-                command: 'clearchat',
+                command: ['clearchat','limpar'],
                 rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -1906,7 +1912,7 @@
             },
 
             cookieCommand: {
-                command: 'cookie',
+                command: ['cookie','biscoito'],
                 rank: 'user',
                 type: 'startsWith',
                 getCookie: function (chat) {
@@ -2401,7 +2407,7 @@
 
             killCommand: {
                 command: 'kill',
-                rank: 'bouncer',
+                rank: 'host',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2561,7 +2567,6 @@
 
                             if (chat.message.length === cmd.length) {
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
-                                basicBot.roomUtilities.booth.lockBooth();
                                 setTimeout(function (id) {
                                     API.moderateForceSkip();
                                     basicBot.room.skippable = false;
@@ -2572,7 +2577,6 @@
                                         basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
                                         basicBot.room.queueable = true;
                                         setTimeout(function () {
-                                            basicBot.roomUtilities.booth.unlockBooth();
                                         }, 1000);
                                     }, 1500, id);
                                 }, 1000, id);
@@ -2590,7 +2594,6 @@
                             }
                             if (validReason) {
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
-                                basicBot.roomUtilities.booth.lockBooth();
                                 setTimeout(function (id) {
                                     API.moderateForceSkip();
                                     basicBot.room.skippable = false;
@@ -2602,7 +2605,6 @@
                                         basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
                                         basicBot.room.queueable = true;
                                         setTimeout(function () {
-                                            basicBot.roomUtilities.booth.unlockBooth();
                                         }, 1000);
                                     }, 1500, id);
                                 }, 1000, id);
@@ -2634,7 +2636,7 @@
 
             logoutCommand: {
                 command: 'logout',
-                rank: 'manager',
+                rank: 'host',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2649,7 +2651,7 @@
             },
 
             maxlengthCommand: {
-                command: 'maxlength',
+                command: ['maxlength', 'duracao'],
                 rank: 'manager',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -2843,7 +2845,7 @@
 
             refreshCommand: {
                 command: 'refresh',
-                rank: 'manager',
+                rank: 'host',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2862,7 +2864,7 @@
 
             reloadCommand: {
                 command: 'reload',
-                rank: 'bouncer',
+                rank: 'host',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2932,7 +2934,7 @@
             },
 
             rouletteCommand: {
-                command: 'roulette',
+                command: ['roleta', 'roulette'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2947,7 +2949,7 @@
             },
 
             rulesCommand: {
-                command: 'rules',
+                command: ['rules', 'regras'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -3608,7 +3610,7 @@
                                 }
                                 var slug = API.getUser(id).slug;
                                 if (typeof slug !== 'undefined') {
-                                    var profile = "https://plug.dj/@/" + slug;
+                                    var profile = "" + slug;
                                 } else {
                                     var profile = "~";
                                 }
