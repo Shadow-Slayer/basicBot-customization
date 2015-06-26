@@ -1179,11 +1179,6 @@
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
                     return true;
                 }
-                if (msg.indexOf('http://plug.dj/') > -1 || msg.indexOf('https://plug.dj/') > -1 || msg.indexOf('plug.dj/') > -1) {
-+                    API.moderateDeleteChat(chat.cid);
-+                    API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
-+                    return true;
-+               } 
                 if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
                     API.moderateDeleteChat(chat.cid);
                     return true;
@@ -1750,7 +1745,6 @@
                         var user = basicBot.userUtilities.lookupUserName(name);
                         if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
                         API.moderateBanUser(user.id, 1, API.BAN.DAY);
-                        API.sendChat('/me @staff favor informar o motivo do ban http://goo.gl/forms/uJlToFL9xU');
                     }
                 }
             },
@@ -1862,7 +1856,7 @@
             },
 
             clearchatCommand: {
-                command: ['clearchat','limpar'],
+                command: 'clearchat',
                 rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2407,7 +2401,7 @@
 
             killCommand: {
                 command: 'kill',
-                rank: 'host',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2567,6 +2561,7 @@
 
                             if (chat.message.length === cmd.length) {
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
+                                basicBot.roomUtilities.booth.lockBooth();
                                 setTimeout(function (id) {
                                     API.moderateForceSkip();
                                     basicBot.room.skippable = false;
@@ -2577,6 +2572,7 @@
                                         basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
                                         basicBot.room.queueable = true;
                                         setTimeout(function () {
+                                            basicBot.roomUtilities.booth.unlockBooth();
                                         }, 1000);
                                     }, 1500, id);
                                 }, 1000, id);
@@ -2594,6 +2590,7 @@
                             }
                             if (validReason) {
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
+                                basicBot.roomUtilities.booth.lockBooth();
                                 setTimeout(function (id) {
                                     API.moderateForceSkip();
                                     basicBot.room.skippable = false;
@@ -2605,6 +2602,7 @@
                                         basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
                                         basicBot.room.queueable = true;
                                         setTimeout(function () {
+                                            basicBot.roomUtilities.booth.unlockBooth();
                                         }, 1000);
                                     }, 1500, id);
                                 }, 1000, id);
@@ -2636,7 +2634,7 @@
 
             logoutCommand: {
                 command: 'logout',
-                rank: 'host',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2651,7 +2649,7 @@
             },
 
             maxlengthCommand: {
-                command: ['maxlength', 'duracao'],
+                command: 'maxlength',
                 rank: 'manager',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -2845,7 +2843,7 @@
 
             refreshCommand: {
                 command: 'refresh',
-                rank: 'host',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2864,7 +2862,7 @@
 
             reloadCommand: {
                 command: 'reload',
-                rank: 'host',
+                rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2934,7 +2932,7 @@
             },
 
             rouletteCommand: {
-                command: ['roleta', 'roulette'],
+                command: ['roulette','roleta'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2949,7 +2947,7 @@
             },
 
             rulesCommand: {
-                command: ['rules', 'regras'],
+                command: ['rules','regras'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -3610,7 +3608,7 @@
                                 }
                                 var slug = API.getUser(id).slug;
                                 if (typeof slug !== 'undefined') {
-                                    var profile = "" + slug;
+                                    var profile = "https://plug.dj/@/" + slug;
                                 } else {
                                     var profile = "~";
                                 }
