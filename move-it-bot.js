@@ -1078,7 +1078,7 @@
 		}
 		if (msg.indexOf('!fodahj') > -1) {
                     API.moderateDeleteChat(chat.cid);                    
-                    API.sendChat({namefrom: chat.un,}'http://i.imgur.com/vz7zqcX.jpg?1');
+                    API.sendChat('http://i.imgur.com/vz7zqcX.jpg?1');
 		}
                 if (msg.indexOf('oi bot') > -1) {
                     API.moderateDeleteChat(chat.cid);
