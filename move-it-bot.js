@@ -1080,6 +1080,11 @@
                     API.moderateDeleteChat(chat.cid);                    
                     API.sendChat('http://i.imgur.com/vz7zqcX.jpg?1');
 		}
+		if (msg.indexOf('!ue') > -1) {
+			API.moderateDeleteChat(chat.cid);
+			var name = user.username;
+			return API.sendChat({name: name ('http://i.imgur.com/aN4o8KU.jpg?1')});
+		}
                 if (msg.indexOf('oi bot') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     setTimeout(function (user) {
