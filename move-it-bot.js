@@ -1083,7 +1083,7 @@
 		if (msg.indexOf('!ue') > -1) {
 			API.moderateDeleteChat(chat.cid);
 			var name = user.username;
-			return API.sendChat({name: name ('http://i.imgur.com/aN4o8KU.jpg?1')});
+			return API.sendChat('http://i.imgur.com/aN4o8KU.jpg?1' {name: name});
 		}
                 if (msg.indexOf('oi bot') > -1) {
                     API.moderateDeleteChat(chat.cid);
