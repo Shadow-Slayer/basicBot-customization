@@ -1076,6 +1076,10 @@
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat('<3 :purple_heart: :blue_heart: :green_heart: :yellow_heart:');
 		}
+		if (msg.indexOf('!fodahj') > -1) {
+                    API.moderateDeleteChat(chat.cid);                    
+                    API.sendChat({namefrom: chat.un, 'http://i.imgur.com/vz7zqcX.jpg?1'});
+		}
                 if (msg.indexOf('oi bot') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     setTimeout(function (user) {
