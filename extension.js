@@ -1,5 +1,6 @@
 (function () {
-    //Link location of your fork so you don't have to modify so many things.
+    
+    //Change this to your GitHub username so you don't have to modify so many things.
     var fork = "Yemasthui";
 		
     //Define our function responsible for extending the bot.
@@ -18,7 +19,6 @@
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
-
          bot.commands.commandCommand = {
          command: 'cmd',
          rank: 'user/bouncer/mod/manager',
@@ -31,7 +31,6 @@
          }
          }
          }
-
          */
 
         bot.commands.baconCommand = {
@@ -55,13 +54,15 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Move-It Bot",
+        botName: "Bot Move-it",
         language: "portuguese",
+        chatLink: "https://rawgit.com/Shadow-Slayer/moveit/master/lang/pt.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
+        autowoot: true,
+        smartSkip: true,
         cmdDeletion: true,
-        chatLink: "https://rawgit.com/Shadow-Slayer/moveit/master/lang/pt.json",
         maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 60,
@@ -80,8 +81,8 @@
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        lockskipPosition: 1,
-        lockskipReasons: [
+        skipPosition: 1,
+        skipReasons: [
             ["theme", "This song does not fit the room theme. "],
             ["op", "This song is on the OP list. "],
             ["history", "This song is in the history. "],
@@ -93,7 +94,7 @@
             ["tema", "Sua música não estava de acordo com o tema da sala. "],
             ["op", "Essa música está na lista OP. "],
             ["tocada", "Sua música já foi tocada recentememnte. "],
-            ["nudes", "A música continha conteudo impróprio NSFW"],
+            ["nudes", "A música continha conteudo impróprio NSFW :underage:"],
             ["ind", "A música não estava disponivel para alguns usuários"]
         ],
         afkpositionCheck: 15,
@@ -110,20 +111,18 @@
         fbLink: "http://goo.gl/gGsuJQ",
         youtubeLink: null,
         website: "http://goo.gl/O4tlVo",
-        intervalMessages: [":game_die: Hora de fazer a roleta! @staff :game_die:",":game_die: Faltam 2 musicas para a roleta",":game_die: Na roleta voce pode tanto ganhar posicoes, como tambem perder!!!"],
+        intervalMessages: [":game_die: Hora de fazer a roleta! :game_die: @staff",":large_orange_diamond: Faltam 2 músicas para a roleta :large_orange_diamond:",":large_orange_diamond: Na roleta voce pode tanto ganhar posições, como tambem perder!!! :large_orange_diamond:"],
         messageInterval: 2,
         songstats: true,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleOPlist.json"
+            OP: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleOPlist.json",
+            BANNED: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/BANNEDlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Shadow-Slayer/moveit/master/move-it-bot.js", extend);
-    $.getScript('https://dl.dropboxusercontent.com/s/a6tnlebyuznm9lw/bots.js?dl=0');
-    /*$.getScript('https://dl.dropboxusercontent.com/s/o9pv5lyk3ckq2vk/showModDelChat.js')*/
-    /*$.getScript('https://rawgit.com/Shadow-Slayer/moveit/master/entrada.js')*/
+    $.getScript("https://rawgit.com/Shadow-Slayer/bot/master/basicBot.js", extend);
 
 }).call(this);
