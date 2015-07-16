@@ -113,7 +113,7 @@
         website: "http://goo.gl/O4tlVo",
         intervalMessages: ["!roleta",":large_orange_diamond: Faltam 2 músicas para a roleta :large_orange_diamond:",":large_orange_diamond: Na roleta voce pode tanto ganhar posições, como tambem perder!!! :large_orange_diamond:"],
         messageInterval: 2,
-        songstats: true,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/Shadow-Slayer/moveit/master/blacklists/ExampleNSFWlist.json",
