@@ -111,7 +111,7 @@
         fbLink: "http://goo.gl/gGsuJQ",
         youtubeLink: null,
         website: "http://goo.gl/O4tlVo",
-        intervalMessages: [":game_die: Hora de fazer a roleta! :game_die: @staff",":large_orange_diamond: Faltam 2 músicas para a roleta :large_orange_diamond:",":large_orange_diamond: Na roleta voce pode tanto ganhar posições, como tambem perder!!! :large_orange_diamond:"],
+        intervalMessages: ["!roleta",":large_orange_diamond: Faltam 2 músicas para a roleta :large_orange_diamond:",":large_orange_diamond: Na roleta voce pode tanto ganhar posições, como tambem perder!!! :large_orange_diamond:"],
         messageInterval: 2,
         songstats: true,
         commandLiteral: "!",
