@@ -46,9 +46,9 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
-      language: "english",
-      chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
+      botName: "Black & White Bot",
+      language: "portuguese",
+      chatLink: "https://rawgit.com/EdJr466/custom/blob/master/lang/pt-BR.json",
       scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
