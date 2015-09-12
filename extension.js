@@ -46,9 +46,9 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "Black & White Bot",
+      botName: "basicBot",
       language: "english",
-      chatLink: "https://rawgit.com/EdJr466/custom/master/lang/pt-BR.json",
+      chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
@@ -102,7 +102,7 @@
       website: null,
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
         NSFW: "https://rawgit.com/bscBot/custom/master/blacklists/NSFWlist.json",
