@@ -111,7 +111,7 @@
         fbLink: "http://goo.gl/gGsuJQ",
         youtubeLink: null,
         website: "http://goo.gl/O4tlVo",
-        intervalMessages: ["!roleta",":large_orange_diamond: Faltam 2 músicas para a roleta :large_orange_diamond:",":large_orange_diamond: Quais seus gêneros musicais preferidos? vote em nosso site http://goo.gl/D1UG3S :large_orange_diamond:"],
+        intervalMessages: ["!roleta",":large_orange_diamond: Faltam 2 músicas para a roleta :large_orange_diamond:",":large_orange_diamond: Participe do nosso Grupo no Facebook https://goo.gl/X0D049 e vamos manter contato antes do Plug acabar <3 :large_orange_diamond:"],
         messageInterval: 2,
         songstats: false,
         commandLiteral: "!",
