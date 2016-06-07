@@ -108,7 +108,7 @@
         opLink: null,
         rulesLink: "http://goo.gl/Nw0Jth",
         themeLink: "http://goo.gl/Nw0Jth",
-        fbLink: "http://goo.gl/gGsuJQ",
+        fbLink: "http://www.fb.com/groups/MoveItBrasil ",
         youtubeLink: null,
         website: "http://goo.gl/O4tlVo",
         intervalMessages: ["!roleta",":large_orange_diamond: Roleta a cada 6 músicas, fique atento ;) :large_orange_diamond:",":large_orange_diamond: Participe do nosso Grupo no Facebook http://www.fb.com/groups/MoveItBrasil <3 :large_orange_diamond:"],
