@@ -111,7 +111,7 @@
         fbLink: "http://goo.gl/gGsuJQ",
         youtubeLink: null,
         website: "http://goo.gl/O4tlVo",
-        intervalMessages: ["!roleta",":large_orange_diamond: Roleta a cada 6 músicas, fique atento ;) :large_orange_diamond:",":large_orange_diamond: Participe do nosso Grupo no Facebook www.fb.com/groups/MoveItBrasil <3 :large_orange_diamond:"],
+        intervalMessages: ["!roleta",":large_orange_diamond: Roleta a cada 6 músicas, fique atento ;) :large_orange_diamond:",":large_orange_diamond: Participe do nosso Grupo no Facebook http://www.fb.com/groups/MoveItBrasil <3 :large_orange_diamond:"],
         messageInterval: 2,
         songstats: false,
         commandLiteral: "!",
