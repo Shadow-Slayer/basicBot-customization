@@ -176,6 +176,7 @@
     "botnameset": "\/me O nome do bot foi definido agora para: %%BOTNAME%%",
     "addbotwaitlist": "\/me @%%NAME%%, n\u00e3o tente me adicionar \u00e0 fila de espera, por favor.",
     "move": "\/me [%%NAME%% usou 'move'.]",
+    "notavailable": "\/me Música indisponível :disappointed_relieved: ",
     "mutednotime": "\/me [@%%NAME%%] @%%USERNAME%% mutado.",
     "mutedmaxtime": "\/me [@%%NAME%%] Voc\u00ea s\u00f3 pode mudar at\u00e9 no m\u00e1ximo %%TIME%% minutos.",
     "mutedtime": "\/me [@%%NAME%%] @%%USERNAME%% mutado por %%TIME%% minuto(s).",
