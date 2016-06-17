@@ -123,6 +123,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Shadow-Slayer/moveit/master/move-it-bot.js", extend);
+    $.getScript("https://rawgit.com/Shadow-Slayer/moveit/master/bot.js", extend);
 
 }).call(this);
