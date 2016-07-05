@@ -274,6 +274,8 @@
             timeGuard: true,
             maximumSongLength: 10,
             autodisable: true,
+            autoroulette: true,
+	    roulettepos: 3,
             commandCooldown: 30,
             usercommandsEnabled: true,
             skipPosition: 3,
@@ -328,6 +330,13 @@
                 if (basicBot.status && basicBot.settings.autodisable) {
                     API.sendChat('!afkdisable');
                     API.sendChat('!joindisable');
+                }
+            },
+            autorouletteInterval: null,
+            autorouletteFunc: function () {
+                if (basicBot.status && basicBot.settings.autoroulette) {
+                    API.chatLog('!roleta');
+					API.sendChat('/me Roleta automatica');
                 }
             },
             queueing: 0,
@@ -2935,9 +2944,9 @@
                 }
             },
 
-            rouletteCommand: {
-                command: ['roulette','roleta'],
-                rank: 'mod',
+            roletaCommand: {
+                command: 'roleta',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2946,6 +2955,25 @@
                         if (!basicBot.room.roulette.rouletteStatus) {
                             basicBot.room.roulette.startRoulette();
                         }
+                    }
+                }
+            },
+			
+			rouletteposCommand: {
+                command: 'roulettepos',
+                rank: 'cohost',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var pos = msg.substring(cmd.length + 1);
+                        if (!isNaN(pos)) {
+                            basicBot.settings.roulettepos = pos;
+                            return API.sendChat(subChat(basicBot.chat.roletapos, {name: chat.un, position: basicBot.settings.roulettepos}));
+                        }
+                        else return API.sendChat(subChat(basicBot.chat.invalidpositionspecified, {name: chat.un}));
                     }
                 }
             },
