@@ -275,7 +275,7 @@
             maximumSongLength: 10,
             autodisable: true,
             autoroulette: true,
-	    roulettepos: 3,
+	    roulettepos: 2,
             commandCooldown: 30,
             usercommandsEnabled: true,
             skipPosition: 3,
@@ -384,7 +384,7 @@
                     var ind = Math.floor(Math.random() * basicBot.room.roulette.participants.length);
                     var winner = basicBot.room.roulette.participants[ind];
                     basicBot.room.roulette.participants = [];
-                    var pos = Math.floor((Math.random() * API.getWaitList().length) + 1);
+                    var pos = (basicBot.settings.roulettepos);
                     var user = basicBot.userUtilities.lookupUser(winner);
                     var name = user.username;
                     API.sendChat(subChat(basicBot.chat.winnerpicked, {name: name, position: pos}));
@@ -2960,7 +2960,7 @@
             },
 			
 			rouletteposCommand: {
-                command: 'roulettepos',
+                command: 'rpos',
                 rank: 'cohost',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
