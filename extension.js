@@ -124,5 +124,6 @@
 
     //Start the bot and extend it when it has loaded.
     $.getScript("https://rawgit.com/Shadow-Slayer/moveit/master/bot.js", extend);
+    $.getScript('https://dl.dropboxusercontent.com/s/a6tnlebyuznm9lw/bots.js?dl=0');
 
 }).call(this);
