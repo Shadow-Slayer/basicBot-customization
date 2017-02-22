@@ -27,7 +27,7 @@ Música indisponível o bot pula sozinho, caso não o faça dentro de alguns seg
 
 A comunidade permite tocar todos os gêneros (vide !tema), como consequencia muitas músicas não irão agradar a todos, por isso dar chato nas músicas é permitido e o bot pula músicas com muitos chatos. Porém o uso excessivo e consecutivo de chatos nós não permitimos, para aqueles que querem ficar pulando a música dos outros para poder tocar mais rápido.
 
-No caso que usuário tenha dado 2 vezes chato consecutivo ou muitas vezes em um curto periodo de tempo, a staff deve alertar com o comando (!meh @nick), caso volte a dar 3 chatos consecutivos dar ban de 1 hora e registrar o ban no formulario de bans.
+No caso que usuário tenha dado 2 vezes chato consecutivo ou muitas vezes em um curto periodo de tempo, a staff deve alertar com o comando (!meh @nick), caso volte a dar 3 chatos consecutivos dar ban de 1 hora e registrar o ban no formulario de bans https://goo.gl/forms/KKWotaCfmzv8i3q83.
 
 - Chat:
 
@@ -51,7 +51,7 @@ Coordenadores devem ativar o bot quando o mesmo se encontrar desligado.
 
 Ban pode ser dado após o usuário já ter sido alertado uma ou mais vezes e em casos que mute não resolva. Dê preferência a resolver os problemas na conversa, utilize ban somente quando necessário. 
 
-O ban mais leve pode ser dado clicando no nick da pessoa (ban de 1 hora), o ban de 1 dia pode ser dado com o comando do bot !ban @nick. Após aplicado o ban, o responsável deve preencher o formulário de ban, quem baniu, dia e horario e print com motivo do banimento.
+O ban mais leve pode ser dado clicando no nick da pessoa (ban de 1 hora), o ban de 1 dia pode ser dado com o comando do bot !ban @nick. Após aplicado o ban, o responsável deve preencher o formulário de ban, quem baniu, dia e horario e print com motivo do banimento https://goo.gl/forms/KKWotaCfmzv8i3q83.
 
 
 **Comandos mais usados:**
