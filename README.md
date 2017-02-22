@@ -59,10 +59,10 @@ O ban mais leve pode ser dado clicando no nick da pessoa (ban de 1 hora), o ban 
 - !skip (motivo) - Pula a música e move o dj para a posição 1. (ex.: !skip som)
 Os motivos que podem ser utilizados, estão definidos abaixo, são 4 motivos: 
 
-    *som - "A música tocada tinha qualidade de som ruim ou não tinha som. "
-    *tema - "Sua música não estava de acordo com o tema da sala."
-    *nudes - "A música continha conteúdo impróprio NSFW :underage:"
-    *ind - "A música não estava disponível para alguns usuários"
+   som - "A música tocada tinha qualidade de som ruim ou não tinha som. "</br>
+   tema - "Sua música não estava de acordo com o tema da sala."</br>
+   nudes - "A música continha conteúdo impróprio NSFW :underage:"</br>
+   ind - "A música não estava disponível para alguns usuários"</br>
 
 - !mute @user (X) - (Onde X pode ser - 15, 30 ou 45 min) - Utilize o mute para usuários sem cargos, que estão fazendo flood no chat, ofendendo alguém, etc.
 - !ban @user - Dá ban de 1 dia
