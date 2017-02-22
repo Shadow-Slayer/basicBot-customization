@@ -1,6 +1,6 @@
 **Regras:**
 
-- Limite máximo por musica - 7 minutos;
+- [Limite máximo por musica - 7 minutos](https://github.com/Shadow-Slayer/moveit/blob/master/README.md#--limite-de-tempo-das-músicas-7-min);
 - Proibido videos com conteúdos impróprio NSFW;
 - Evite dar muitos "chatos" seguidos nas músicas, utilize também o botão de silenciar;
 - Proibido Flood, divulgar outras comunidades e evite Caps Lock em excesso;
