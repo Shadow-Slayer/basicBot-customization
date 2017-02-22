@@ -10,18 +10,20 @@ Punições:
 Mutes 15, 30 e 45 minutos
 Ban 1 hora, 1 dia , pra sempre
 
-!skip (motivo) - Pula a música e move o dj para a posição 1. (ex.: !skip som)
+- !skip (motivo) - Pula a música e move o dj para a posição 1. (ex.: !skip som)
+
 Os motivos que podem ser utilizados, estão definidos abaixo, são 4 motivos: 
-som - "A música tocada tinha qualidade de som ruim ou não tinha som. "
-tema - "Sua música não estava de acordo com o tema da sala."
-nudes - "A música continha conteúdo impróprio NSFW :underage:"
-ind - "A música não estava disponível para alguns usuários"
-!mute @user (X) - (Onde X pode ser - 15, 30 ou 45 min) - Utilize o mute para usuários sem cargos, que estão fazendo flood no chat, ofendendo alguém, etc.
-!ban @user - Dá ban de 1 dia
-!meh @nick - Utilize esse comando quando derem vários chatos seguidos nas musicas. Chato esta liberado, mas com moderação. Músicas com muitos chatos serão puladas. 
-!move @nick (posição) - Move usuário para a posição X na lista de espera (ex: !move @shadow 1)
-!dc @nick - Caso alguém tenha caído ou saiu da sala, voltou e não sabe como voltar a sua posição na fila.
-!blinfo - Se tocarem alguma musica contra as regras, digite esse comando, copia as informações q o bot mostrar e passe para o Shadow. Em seguida utilize o (!skip tema)
+- som - "A música tocada tinha qualidade de som ruim ou não tinha som. "
+- tema - "Sua música não estava de acordo com o tema da sala."
+- nudes - "A música continha conteúdo impróprio NSFW :underage:"
+- ind - "A música não estava disponível para alguns usuários"
+
+- !mute @user (X) - (Onde X pode ser - 15, 30 ou 45 min) - Utilize o mute para usuários sem cargos, que estão fazendo flood no chat, ofendendo alguém, etc.
+- !ban @user - Dá ban de 1 dia
+- !meh @nick - Utilize esse comando quando derem vários chatos seguidos nas musicas. Chato esta liberado, mas com moderação. Músicas com muitos chatos serão puladas. 
+- !move @nick (posição) - Move usuário para a posição X na lista de espera (ex: !move @shadow 1)
+- !dc @nick - Caso alguém tenha caído ou saiu da sala, voltou e não sabe como voltar a sua posição na fila.
+- !blinfo - Se tocarem alguma musica contra as regras, digite esse comando, copia as informações q o bot mostrar e passe para o Shadow. Em seguida utilize o (!skip tema)
 
 Instruções:
 Limite de tempo das músicas: (7 min)
