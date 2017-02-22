@@ -1,7 +1,7 @@
 **Regras:**
 
-- Proibido videos com conteúdos impróprio NSFW;
 - Limite máximo por musica - 7 minutos;
+- Proibido videos com conteúdos impróprio NSFW;
 - Evite dar muitos "chatos" seguidos nas músicas, utilize também o botão de silenciar;
 - Proibido Flood no chat e evite Caps Lock em excesso ;
 - Proibido divulgar outras comunidades;
