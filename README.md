@@ -2,9 +2,9 @@
 
 - [Limite máximo por musica - 7 minutos](https://github.com/Shadow-Slayer/moveit/blob/master/README.md#--limite-de-tempo-das-músicas-7-min);
 - [Proibido videos com conteúdos impróprio NSFW](https://github.com/Shadow-Slayer/moveit/blob/master/README.md#--vídeo-com-conteúdo-impróprio-fora-do-tema-e-indisponível);
-- [Evite dar muitos "chatos" seguidos nas músicas, utilize também o botão de silenciar];
-- [Proibido Flood, divulgar outras comunidades e evite Caps Lock em excesso];
-- [Respeitar os membros da sala e staffs, brincadeiras são permitidas desde que não ofenda a outra pessoa];
+- [Evite dar muitos "chatos" seguidos nas músicas, utilize também o botão de silenciar](https://github.com/Shadow-Slayer/moveit/blob/master/README.md#--chatos-nas-músicas);
+- [Proibido Flood, divulgar outras comunidades e evite Caps Lock em excesso](https://github.com/Shadow-Slayer/moveit/blob/master/README.md#--chat);
+- [Respeitar os membros da sala e staffs, brincadeiras são permitidas desde que não ofenda a outra pessoa](https://github.com/Shadow-Slayer/moveit/blob/master/README.md#--respeito-entre-os-membros-da-sala-e-staffs);
 
 
 **Instruções:**
