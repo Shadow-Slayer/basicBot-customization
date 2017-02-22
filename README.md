@@ -9,11 +9,11 @@
 
 **Instruções:**
 
-<h3>- Limite de tempo das músicas: (7 min)
+<h3>- Limite de tempo das músicas: (7 min)</h3>
 
 Bot estando ligado é pulado automaticamente e movido para 1º lugar.Na segunda vez o bot fará o mesmo, então algum staff deve mover o usuário para último lugar.
 
-<h3>- Vídeo com conteúdo impróprio, fora do tema e indisponível:
+<h3>- Vídeo com conteúdo impróprio, fora do tema e indisponível:</h3>
 
 Para saber se um vídeo é impróprio, recomendamos que peguem o link do vídeo e abram em uma janela anônima do navegador com o Youtube deslogado, se o vídeo for impróprio o Youtube não irá reproduzir o vídeo e mostrará uma mensagem alertando sobre o conteúdo do vídeo.
 Staffs devem utilizar o comando (!blinfo) copiar as informações que o bot enviar e passar para os hosts, em seguida pular o vídeo com o comando (!skip nudes) que pula o usuário e o move para primeiro novamente. Se persistir deve pular somente e deixar o usuário em último.
@@ -22,19 +22,19 @@ Músicas que não estão de acordo com as permitidas nas regras, utilize o (!ski
 
 Música indisponível o bot pula sozinho, caso não o faça dentro de alguns segundos, utilize o (!skip ind) ou pule pelo próprio plug e mova o usuário para 1 na fila.
 
-<h3>- Chatos nas músicas:
+<h3>- Chatos nas músicas:</h3>
 
 A comunidade permite tocar todos os gêneros (vide !tema), como consequencia muitas músicas não irão agradar a todos, por isso dar chato nas músicas é permitido e o bot pula músicas com muitos chatos. Porém o uso excessivo e consecutivo de chatos nós não permitimos, para aqueles que querem ficar pulando a música dos outros para poder tocar mais rápido.
 
 No caso que usuário tenha dado 2 vezes chato consecutivo ou muitas vezes em um curto periodo de tempo, a staff deve alertar com o comando (!meh @nick), caso volte a dar 3 chatos consecutivos dar ban de 1 hora e registrar o ban no formulario de bans https://goo.gl/forms/KKWotaCfmzv8i3q83.
 
-<h3>- Chat:
+<h3>- Chat:</h3>
 
 Fazer flood, utilizar Caps Lock em excesso, divulgação de outras comunidades o usuário deve ser alertado. Persistindo leva mute de 15 min. Caso de recorrência o tempo do mute aumenta para 30, 45 minutos, podendo levar ao banimento.
 
 Mensagens impróprias do chat, conteudo adulto, floods, mensagens em caps lock devem ser deletadas.
 
-<h3>- Respeito entre os membros da sala e staffs:
+<h3>- Respeito entre os membros da sala e staffs:</h3>
 
 Ofensas entre usuários e RDJs a staff deve dar um alerta, se for caso mais grave que não param, dê o mute de 15 min mesmo sem alertar e o cargo de RDJ é perdido (mute aplicado a todos envolvidos não importa quem começou).
 
