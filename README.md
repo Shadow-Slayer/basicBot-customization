@@ -28,7 +28,7 @@ A comunidade permite tocar todos os gêneros (vide !tema), como consequencia mui
 
 No caso que usuário tenha dado 3 vezes chato consecutivo ou muitas vezes em um curto periodo de tempo, a staff deve alertar com o comando (!meh @nick), caso volte a dar 3 chatos consecutivos dar ban de 1 hora e registrar o ban no formulario de bans https://goo.gl/forms/KKWotaCfmzv8i3q83.
 
-Para facilitar, no RCS tem a opção de ativar um aviso quando o usuário da 3 chatos seguidos <img src="http://image.prntscr.com/image/42569b806bd7463bad69eefbbed6f5c7.png" />  
+Para facilitar, no RCS tem a opção de ativar um aviso quando o usuário da 3 chatos seguidos <img src="http://image.prntscr.com/image/42569b806bd7463bad69eefbbed6f5c7.png" /> <img src="http://image.prntscr.com/image/fe01e1d7af854bcdbb79806e67d919ff.png" />
 
 <h3>- Chat:</h3>
 
