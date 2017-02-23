@@ -53,7 +53,7 @@ Ban pode ser dado após o usuário já ter sido alertado uma ou mais vezes e em 
 O ban mais leve pode ser dado clicando no nick da pessoa (ban de 1 hora), o ban de 1 dia pode ser dado com o comando do bot !ban @nick. Após aplicado o ban, o responsável deve preencher o formulário de ban, quem baniu, dia e horario e print com motivo do banimento https://goo.gl/forms/KKWotaCfmzv8i3q83.
 
 
-**Comandos mais usados:**
+**Comandos:**
 
 - !skip (motivo) - Pula a música e move o dj para a posição 1. (ex.: !skip som)
 Os motivos que podem ser utilizados, estão definidos abaixo, são 4 motivos: 
