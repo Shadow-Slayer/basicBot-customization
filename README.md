@@ -40,7 +40,7 @@ Mensagens impróprias do chat, conteudo adulto, floods, mensagens em caps lock d
 
 Ofensas entre usuários e RDJs a staff deve dar um alerta, se for caso mais grave que não param, dê o mute de 15 min mesmo sem alertar e o cargo de RDJ é perdido (mute aplicado a todos envolvidos não importa quem começou).
 
-Ofensa entre staffs, seus superiores podem tirar o cargo se for necessário e aplicar mute. Reportem o ocorrido aos hosts para que possam tomar as devidas providências.
+Ofensa entre staffs, seus superiores podem tirar o cargo se for necessário e aplicar mute com /mute @nick do RCS. Reportem o ocorrido aos hosts para que possam tomar as devidas providências.
 
 Todos staffs devem ser amigáveis com todos da sala e ser receptivo com novos usuários ajudando-os com suas dúvidas.
 
