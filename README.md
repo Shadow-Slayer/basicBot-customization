@@ -15,7 +15,7 @@ Bot estando ligado é pulado automaticamente e movido para 1º lugar.Na segunda 
 
 <h3>- Vídeo com conteúdo impróprio, fora do tema e indisponível:</h3>
 
-Para saber se um vídeo é impróprio, recomendamos que peguem o link do vídeo e abram em uma janela anônima do navegador com o Youtube deslogado, se o vídeo for impróprio o Youtube não irá reproduzir o vídeo e mostrará uma mensagem alertando sobre o conteúdo do vídeo.
+Vídeos com conteúdo explicito, não necessariamente nudez, mas sensual, erótico, calunioso, ofensivo e outros são probidos.
 Staffs devem utilizar o comando (!blinfo) copiar as informações que o bot enviar e passar para os hosts, em seguida pular o vídeo com o comando (!skip nudes) que pula o usuário e o move para primeiro novamente. Se persistir deve pular somente e deixar o usuário em último.
 
 Músicas que não estão de acordo com as permitidas nas regras, utilize o (!skip tema), para que o bot pule a musica e mova o usuário para 1, caso toque em seguida outra musica fora do tema, apenas pule sem o comando e sem mover pra 1.
