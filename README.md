@@ -18,7 +18,7 @@ Bot estando ligado é pulado automaticamente e movido para 1º lugar.Na segunda 
 Vídeos com conteúdo explicito, não necessariamente nudez, mas sensual, erótico, calunioso, ofensivo e outros são probidos.
 Staffs devem utilizar o comando (!blinfo) copiar as informações que o bot enviar e passar para os hosts, em seguida pular o vídeo com o comando (!skip nudes) que pula o usuário e o move para primeiro novamente. Se persistir deve pular somente e deixar o usuário em último.
 
-Músicas que não estão de acordo com as permitidas nas regras, utilize o (!skip tema), para que o bot pule a musica e mova o usuário para 1, caso toque em seguida outra musica fora do tema, apenas pule sem o comando e sem mover pra 1.
+Músicas que não estão de acordo com as permitidas no tema, utilize o (!skip tema), para que o bot pule a musica e mova o usuário para 1, caso toque em seguida outra musica fora do tema, apenas pule sem o comando e sem mover pra 1.
 
 Música indisponível o bot pula sozinho, caso não o faça dentro de alguns segundos, utilize o (!skip ind) ou pule pelo próprio plug e mova o usuário para 1 na fila.
 
