@@ -36,7 +36,7 @@ Fazer flood, utilizar Caps Lock em excesso, divulgação de outras comunidades o
 
 Mensagens impróprias do chat, conteudo adulto, floods, mensagens em caps lock devem ser deletadas.
 
-<h3>- Respeito entre os membros da sala e staffs:</h3>
+<h3>- Respeito entre os membros; Instruções para a staff:</h3>
 
 Ofensas entre usuários e RDJs a staff deve dar um alerta, se for caso mais grave que não param, dê o mute de 15 min mesmo sem alertar e o cargo de RDJ é perdido (mute aplicado a todos envolvidos não importa quem começou).
 
