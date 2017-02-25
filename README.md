@@ -68,4 +68,4 @@ Os motivos que podem ser utilizados, estão definidos abaixo, são 4 motivos:
 - !meh @nick - Utilize esse comando quando derem 3 chatos seguidos nas musicas ou muitos em um curto periodo de tempo. Chato esta liberado, mas com moderação. Músicas com muitos chatos serão puladas. 
 - !move @nick (posição) - Move usuário para a posição X na lista de espera (ex: !move @shadow 1)
 - !dc @nick - Caso alguém tenha caído ou saiu da sala, voltou e não sabe como voltar a sua posição na fila.
-- !blinfo - Se tocarem alguma musica contra as regras, digite esse comando, copia as informações q o bot mostrar e passe para o Shadow. Em seguida utilize o (!skip tema)
+- !blinfo - Se tocarem alguma musica contra as regras, digite esse comando, copia as informações q o bot mostrar e passe para os hosts. Em seguida utilize o (!skip tema)
