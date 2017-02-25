@@ -24,7 +24,7 @@ Música indisponível o bot pula sozinho, caso não o faça dentro de alguns seg
 
 <h3>- Chatos nas músicas:</h3>
 
-A comunidade permite tocar todos os gêneros (vide !tema), como consequencia muitas músicas não irão agradar a todos, por isso dar chato nas músicas é permitido e o bot pula músicas com muitos chatos. Porém o uso excessivo e consecutivo de chatos nós não permitimos, para aqueles que querem ficar pulando a música dos outros para poder tocar mais rápido.
+A comunidade permite tocar todos os gêneros (vide !tema), como consequencia muitas músicas não irão agradar a todos, por isso dar chato nas músicas é permitido e o bot pula músicas com muitos chatos. Porém o uso excessivo e consecutivo de chatos nós não permitimos, e se feito na mesma música será considerado flood.
 
 No caso que usuário tenha dado 3 vezes chato consecutivo ou muitas vezes em um curto periodo de tempo, a staff deve alertar com o comando (!meh @nick), caso volte a dar 3 chatos consecutivos dar ban de 1 hora e registrar o ban no formulario de bans https://goo.gl/forms/KKWotaCfmzv8i3q83.
 
