@@ -16,7 +16,7 @@ Bot estando ligado é pulado automaticamente e movido para 1º lugar. Se ocorrer
 <h3>- Vídeo com conteúdo impróprio, fora do tema e indisponível:</h3>
 
 Vídeos com conteúdo explicito, não necessariamente nudez, mas sensual, erótico, calunioso, ofensivo e outros são probidos.
-Staffs devem utilizar o comando (!blinfo) copiar as informações que o bot enviar e passar para os hosts, em seguida pular o vídeo com o comando (!skip nudes) que pula o usuário e o move para primeiro novamente. Se persistir deve pular somente e deixar o usuário em último.
+Staffs devem utilizar o comando (!blinfo) copiar as informações que o bot enviar e passar para os hosts colocarem na blacklist, em seguida pular o vídeo com o comando (!skip nudes) que pula o usuário e o move para primeiro novamente. Se persistir deve pular somente e deixar o usuário em último.
 
 Músicas que não estão de acordo com as permitidas no tema, utilize o (!skip tema), para que o bot pule a musica e mova o usuário para 1, caso toque em seguida outra musica fora do tema, apenas pule sem o comando e sem mover pra 1.
 
@@ -68,4 +68,4 @@ Os motivos que podem ser utilizados, estão definidos abaixo, são 4 motivos:
 - !meh @nick - Utilize esse comando quando derem 3 chatos seguidos nas musicas ou muitos em um curto periodo de tempo. Chato esta liberado, mas com moderação. Músicas com muitos chatos serão puladas. 
 - !move @nick (posição) - Move usuário para a posição X na lista de espera (ex: !move @shadow 1)
 - !dc @nick - Caso alguém tenha caído ou saiu da sala, voltou e não sabe como voltar a sua posição na fila.
-- !blinfo - Se tocarem alguma musica contra as regras, digite esse comando, copia as informações q o bot mostrar e passe para os hosts. Em seguida utilize o (!skip tema)
+- !blinfo - Se tocarem alguma musica contra as regras, digite esse comando, copia as informações que o bot mostrar e passe para os hosts colocarem na blacklist. Em seguida utilize o (!skip tema)
