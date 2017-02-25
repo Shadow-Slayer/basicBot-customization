@@ -34,7 +34,7 @@ Para facilitar, no RCS tem a opção de ativar um aviso quando o usuário da 3 c
 
 Fazer flood, utilizar Caps Lock em excesso, divulgação de outras comunidades o usuário deve ser alertado. Persistindo leva mute de 15 min. Caso de recorrência o tempo do mute aumenta para 30, 45 minutos, podendo levar ao banimento.
 
-Mensagens impróprias do chat, conteudo adulto, floods, mensagens em caps lock devem ser deletadas.
+Mensagens e fotos impróprias do chat, conteudo adulto, floods, mensagens em caps lock devem ser deletadas e o usuário advertido.
 
 <h3>- Respeito entre os membros; Instruções para a staff:</h3>
 
