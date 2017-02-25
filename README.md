@@ -44,7 +44,7 @@ Ofensa entre staffs, seus superiores podem tirar o cargo se for necessário e ap
 
 Todos staffs devem ser amigáveis com todos da sala e ser receptivo com novos usuários ajudando-os com suas dúvidas.
 
-Erros da staff, reportem aos hosts no Discord, não desfaçam as ações de outros staffs e não chamem atenção no chat do Plug.
+Erros da staff, reportem aos hosts, não desfaçam as ações de outros staffs e não chamem atenção no chat do Plug.
 
 Coordenadores devem ativar o bot quando o mesmo se encontrar desligado.
 
