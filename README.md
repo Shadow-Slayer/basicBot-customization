@@ -11,7 +11,7 @@
 
 <h3>- Limite de tempo das músicas: (7 min)</h3>
 
-Bot estando ligado é pulado automaticamente e movido para 1º lugar.Na segunda vez o bot fará o mesmo, então algum staff deve mover o usuário para último lugar.
+Bot estando ligado é pulado automaticamente e movido para 1º lugar. Se ocorrer na segunda vez seguida o bot fará o mesmo, porém algum staff deverá mover o usuário para último lugar.
 
 <h3>- Vídeo com conteúdo impróprio, fora do tema e indisponível:</h3>
 
